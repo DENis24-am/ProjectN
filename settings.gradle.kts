@@ -9,5 +9,11 @@ pluginManagement {
         id("org.jetbrains.compose").version(extra["compose.version"] as String)
     }
 }
+plugins {
+    id("org.gradle.toolchains.foojay-resolver-convention") version "0.5.0"
+}
 
 rootProject.name = "ProjectN"
+include("core")
+include("data")
+include("domain")
