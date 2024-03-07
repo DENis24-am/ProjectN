@@ -21,13 +21,13 @@
             inkscape:pagecheckerboard="0"
             inkscape:deskcolor="#505050"
             inkscape:document-units="px"
-            inkscape:zoom="0.2493288"
-            inkscape:cx="1090.9289"
-            inkscape:cy="727.95441"
-            inkscape:window-width="1920"
+            inkscape:zoom="0.35260417"
+            inkscape:cx="1079.1137"
+            inkscape:cy="582.80649"
+            inkscape:window-width="1902"
             inkscape:window-height="1001"
-            inkscape:window-x="-32000"
-            inkscape:window-y="-32000"
+            inkscape:window-x="0"
+            inkscape:window-y="0"
             inkscape:window-maximized="0"
             inkscape:current-layer="layer1"/>
     <defs
@@ -38,38 +38,64 @@
             id="layer1">
         <rect
                 style="fill:#bc00b3;fill-opacity:1"
-                id="rect1"
+                id="background"
                 width="1920"
                 height="1080"
-                x="0"
-                y="0"/>
+                x="-1920"
+                y="0"
+                transform="scale(-1,1)"
+                inkscape:label="background">
+            <desc
+                    id="desc1">it is desk
+            </desc>
+            <title
+                    id="title1">bg
+            </title>
+        </rect>
         <rect
                 style="fill:#0000ff;fill-opacity:1"
                 id="rect3"
                 width="216.58148"
                 height="108.29074"
-                x="862.31519"
-                y="48.129219"/>
+                x="867.98724"
+                y="14.26369">
+            <title
+                    id="title5">{action: &quot;move&quot;; destination: &quot;new&quot;}
+            </title>
+        </rect>
         <rect
                 style="fill:#0000ff;fill-opacity:1"
                 id="rect4"
                 width="124.33381"
                 height="280.75378"
-                x="1750.9856"
-                y="401.07681"/>
+                x="1754.8881"
+                y="398.24078">
+            <title
+                    id="title4">{action: &quot;move&quot;; destination: &quot;new&quot;}
+            </title>
+        </rect>
         <rect
                 style="fill:#0000ff;fill-opacity:1"
                 id="rect5"
                 width="308.82916"
                 height="92.247665"
-                x="780.13208"
-                y="900.8213"/>
+                x="811.14832"
+                y="954.39587">
+            <title
+                    id="title3">{action: &quot;move&quot;; destination: &quot;new&quot;}
+            </title>
+        </rect>
         <rect
                 style="fill:#0000ff;fill-opacity:1"
                 id="rect6"
                 width="144.38765"
                 height="272.73224"
-                x="0"
-                y="409.09836"/>
+                x="36.952023"
+                y="423.27856"
+                inkscape:label="rect6">
+            <title
+                    id="title2">{action: &quot;move&quot;; destination: &quot;new&quot;}
+            </title>
+        </rect>
     </g>
 </svg>
