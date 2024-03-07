@@ -6,5 +6,6 @@ data class RectUi(
     var width: Double = 0.0,
     var height: Double = 0.0,
     var x: Double = 0.0,
-    var y: Double = 0.0
+    var y: Double = 0.0,
+    var title: Title? = null
 )

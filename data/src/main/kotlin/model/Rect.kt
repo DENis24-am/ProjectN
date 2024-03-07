@@ -1,6 +1,7 @@
 package model
 
 import org.simpleframework.xml.Attribute
+import org.simpleframework.xml.Element
 import org.simpleframework.xml.Root
 
 @Root(name = "rect")
@@ -21,7 +22,10 @@ data class Rect(
     var x: Double = 0.0,
 
     @field:Attribute(name = "y")
-    var y: Double = 0.0
+    var y: Double = 0.0,
+
+    @field:Element(name = "title")
+    var title: Title? = null
 )
 
 fun Rect.toUiModel(): RectUi {
@@ -31,6 +35,7 @@ fun Rect.toUiModel(): RectUi {
         width = width,
         height = height,
         x = x,
-        y = y
+        y = y,
+        title = title
     )
 }

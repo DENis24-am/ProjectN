@@ -23,24 +23,6 @@ data class Svg(
     @field:Attribute(name = "id")
     var id: String? = null,
 
-//    @field:Attribute(name = "xmlns:inkscape")
-//    var inkscapeNamespace: String? = null
-//
-//    @field:Attribute(name = "xmlns:sodipodi")
-//    var sodipodiNamespace: String? = null
-
-//    @field:Attribute(name = "xmlns")
-//    var xmlns: String? = null
-
-//    @field:Attribute(name = "xmlns:svg")
-//    var svgNamespace: String? = null
-
-//    @field:Element(name = "namedview")
-//    var namedView: NamedView? = null
-
-//    @field:Element(name = "defs")
-//    var defs: Defs? = null
-
     @field:Element(name = "g")
     var group: Group? = null
 )
