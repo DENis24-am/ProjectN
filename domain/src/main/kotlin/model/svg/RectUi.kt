@@ -1,4 +1,4 @@
-package model
+package model.svg
 
 data class RectUi(
     var style: String? = null,
@@ -7,5 +7,6 @@ data class RectUi(
     var height: Double = 0.0,
     var x: Double = 0.0,
     var y: Double = 0.0,
-    var title: Title? = null
+    var titleUi: TitleUi? = null,
+    var extraAttributes: MutableMap<String, String>? = null
 )

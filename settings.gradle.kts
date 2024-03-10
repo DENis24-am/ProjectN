@@ -17,3 +17,4 @@ rootProject.name = "ProjectN"
 include("core")
 include("data")
 include("domain")
+include("feature")
