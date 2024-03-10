@@ -4,27 +4,27 @@ import org.simpleframework.xml.Attribute
 import org.simpleframework.xml.Element
 import org.simpleframework.xml.Root
 
-@Root(name = "rect")
+@Root(name = "rect", strict = false)
 data class Rect(
-    @field:Attribute(name = "style")
+    @field:Attribute(name = "style", required = false)
     var style: String? = null,
 
-    @field:Attribute(name = "id")
+    @field:Attribute(name = "id", required = false)
     var id: String? = null,
 
-    @field:Attribute(name = "width")
+    @field:Attribute(name = "width", required = false)
     var width: Double = 0.0,
 
-    @field:Attribute(name = "height")
+    @field:Attribute(name = "height", required = false)
     var height: Double = 0.0,
 
-    @field:Attribute(name = "x")
+    @field:Attribute(name = "x", required = false)
     var x: Double = 0.0,
 
-    @field:Attribute(name = "y")
+    @field:Attribute(name = "y", required = false)
     var y: Double = 0.0,
 
-    @field:Element(name = "title")
+    @field:Element(name = "title", required = false)
     var title: Title? = null
 )
 

@@ -8,22 +8,22 @@ import org.simpleframework.xml.Root
 @Root(name = "svg", strict = false)
 @Namespace(prefix = "inkscape", reference = "http://www.inkscape.org/namespaces/inkscape")
 data class Svg(
-    @field:Attribute(name = "width")
+    @field:Attribute(name = "width", required = false)
     var width: Int = 0,
 
-    @field:Attribute(name = "height")
+    @field:Attribute(name = "height", required = false)
     var height: Int = 0,
 
-    @field:Attribute(name = "viewBox")
+    @field:Attribute(name = "viewBox", required = false)
     var viewBox: String? = null,
 
-    @field:Attribute(name = "version")
+    @field:Attribute(name = "version", required = false)
     var version: String? = null,
 
-    @field:Attribute(name = "id")
+    @field:Attribute(name = "id", required = false)
     var id: String? = null,
 
-    @field:Element(name = "g")
+    @field:Element(name = "g", required = false)
     var group: Group? = null
 )
 
