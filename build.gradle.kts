@@ -19,6 +19,7 @@ dependencies {
     implementation(project(":core"))
     implementation(project(":data"))
     implementation(project(":domain"))
+    implementation(project(":feature"))
 }
 
 compose.desktop {

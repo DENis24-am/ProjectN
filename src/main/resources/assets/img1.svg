@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+        version="1.1"
+        id="svg1"
+        width="1920"
+        height="1080"
+        viewBox="0 0 1920 1080"
+        sodipodi:docname="img1.svg"
+        xml:space="preserve"
+        inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns="http://www.w3.org/2000/svg"
+><defs
+     id="defs1" />
+    <sodipodi:namedview
+            id="namedview1"
+            pagecolor="#505050"
+            bordercolor="#eeeeee"
+            borderopacity="1"
+            inkscape:showpageshadow="0"
+            inkscape:pageopacity="0"
+            inkscape:pagecheckerboard="0"
+            inkscape:deskcolor="#505050"
+            inkscape:zoom="0.48708333"
+            inkscape:cx="934.13174"
+            inkscape:cy="475.27801"
+            inkscape:window-width="1920"
+            inkscape:window-height="1001"
+            inkscape:window-x="-9"
+            inkscape:window-y="-9"
+            inkscape:window-maximized="1"
+            inkscape:current-layer="g1"/>
+    <g
+            inkscape:groupmode="layer"
+            inkscape:label="Image"
+            id="g1">
+        <image
+                width="1928.5714"
+                height="1080"
+                preserveAspectRatio="none"
+                style="image-rendering:optimizeQuality"
+                xlink:href="GameAssets/img2.jpg"
+                id="image1"
+                x="0"
+                y="0"
+                inkscape:highlight-color="#ea813e"/>
+        <rect
+                style="fill:#0000ff;stroke-width:0.90927"
+                id="rect1"
+                width="509.15317"
+                height="268.94785"
+                x="710.35077"
+                y="355.17535"
+                inkscape:label="rect1">
+            <title
+                    id="title1">{id: &quot;rect1&quot;; action: &quot;moveto&quot;; destination: &quot;img2&quot;}
+            </title>
+        </rect>
+        <image
+                width="512"
+                height="512"
+                preserveAspectRatio="none"
+                style="image-rendering:optimizeQuality"
+                xlink:href="UI/start.png"
+                id="image2"
+                x="707.90076"
+                y="235.70232"
+                inkscape:svg-dpi="1"
+                inkscape:label="image2"/>
+    </g>
+</svg>
