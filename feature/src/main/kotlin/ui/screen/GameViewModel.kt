@@ -1,14 +1,20 @@
 package ui.screen
 
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
+import kotlinx.coroutines.launch
 import model.GameUiState
+import model.button.ButtonInfoUi
+import model.button.ButtonUi
 import model.json.ActionJsonUi
 import model.svg.ImageUi
 import model.svg.RectUi
 import util.FindAssets
 import util.FindAssetsUtil
+import util.json.JsonParsing
 import util.svg.SvgParsingUtil
 
 class GameViewModel {
@@ -20,27 +26,24 @@ class GameViewModel {
     private val findAssets: FindAssets = FindAssetsUtil()
 
     init {
-        svgParser.parseSvgFromAsset("assets/img1.svg")
+        svgParser.parseSvgFromAsset("assets/img2.svg")
         setCurrentImage(
-            "img1",
+            "img2",
             svgParser.getAllImages(),
             svgParser.getAllRect()
         )
     }
 
     fun moveTo(actionJsonUi: ActionJsonUi) {
-        println(actionJsonUi) // delete this
-//        if(findAssets.getAsset("assets/${actionJsonUi.destination}.svg")) {
-        val svgPath = "assets/${_state.value.currentImage}.svg"
-        svgParser.parseSvgFromAsset(svgPath)
-        setCurrentImage(
-            actionJsonUi.destination,
-            svgParser.getAllImages(),
-            svgParser.getAllRect()
-        )
-
-        println(svgParser.getAllRect()) // delete this
-//        }
+        CoroutineScope(Dispatchers.Default).launch {
+            val svgPath = "assets/${_state.value.currentImage}.svg"
+            svgParser.parseSvgFromAsset(svgPath)
+            setCurrentImage(
+                actionJsonUi.destination,
+                svgParser.getAllImages(),
+                svgParser.getAllRect()
+            )
+        }
     }
 
 
@@ -53,7 +56,18 @@ class GameViewModel {
             _state.value.copy(
                 currentImage = image,
                 images = images,
-                rect = rects
+                buttonsInfo = rects.map {
+                    val actionJsonUi = JsonParsing().parseJson(it.titleUi?.value ?: "")
+                    ButtonInfoUi(
+                        buttonUi = when (actionJsonUi.id) {
+                            "rect1" -> ButtonUi.Left
+                            "rect2" -> ButtonUi.Right
+                            "rect3" -> ButtonUi.Top
+                            else -> ButtonUi.Unknown
+                        },
+                        actionJsonUi = actionJsonUi
+                    )
+                }
             )
         }
     }

@@ -4,14 +4,16 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import model.button.ButtonInfoUi
 import model.json.ActionJsonUi
 import model.svg.ImageUi
-import model.svg.RectUi
 
 @Composable
 fun DrawScenes(
     images: List<ImageUi>,
-    buttons: List<RectUi>,
+    buttons: List<ButtonInfoUi>,
+    screenWidth: Int,
+    screenHeight: Int,
     modifier: Modifier = Modifier,
     onClick: (ActionJsonUi) -> Unit = {},
     content: @Composable () -> Unit = {}
@@ -24,9 +26,11 @@ fun DrawScenes(
             images = images,
             modifier = Modifier
         )
+
         DrawButton(
-            buttons = buttons,
-            modifier = Modifier,
+            screenWith = screenWidth,
+            screenHeight = screenHeight,
+            buttonsUi = buttons,
             onClick = onClick
         )
         content()

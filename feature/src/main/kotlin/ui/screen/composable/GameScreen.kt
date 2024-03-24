@@ -10,14 +10,19 @@ import ui.screen.GameViewModel
 @Composable
 fun GameScren(
     viewModel: GameViewModel,
+    screenWidth: Int,
+    screenHeight: Int,
     modifier: Modifier = Modifier
 ) {
     val state by viewModel.state.collectAsState()
 
     DrawScenes(
         images = state.images,
-        buttons = state.rect,
+        buttons = state.buttonsInfo,
+        screenWidth = screenWidth,
+        screenHeight = screenHeight,
         onClick = viewModel::moveTo,
         modifier = modifier
     )
 }
+
