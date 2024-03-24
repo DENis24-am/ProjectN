@@ -26,6 +26,7 @@ class SvgParsingUtil : SvgParsing {
         val svgInputStream: InputStream = javaClass.classLoader.getResourceAsStream(path) ?: throw FoundAssetException()
         svgCode = svgInputStream.bufferedReader().use { it.readText() }
         data = serializer.read(Svg::class.java, svgCode.trimIndent())
+//        return data
     }
 }
 

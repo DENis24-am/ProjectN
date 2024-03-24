@@ -57,17 +57,17 @@
                 x="6.0513949"
                 y="342.91238"
                 inkscape:label="rect1"><title
-         id="title1">{id: &quot;rect1&quot;; action: &quot;moveto&quot;;  description: &quot;img1&quot;;}</title></rect>
+             id="title1">{id: &quot;rect1&quot;; action: &quot;moveto&quot;; destination: &quot;img1&quot;}</title></rect>
         <rect
                 style="fill:#0000ff"
                 id="rect2"
                 width="229.953"
                 height="467.97452"
-                x="-0.27215594"
-                y="-1236.5938"
+                x="0.27215594"
+                y="6.5938"
                 transform="rotate(90)"
                 inkscape:label="rect2"><title
-         id="title1-6">{id: &quot;rect2&quot;; action: &quot;moveto&quot;;  description: &quot;img3&quot;;}</title></rect>
+         id="title1-6">{id: &quot;rect2&quot;; action: &quot;moveto&quot;; destination: &quot;img1&quot;}</title></rect>
         <rect
                 style="fill:#0000ff"
                 id="rect3"
@@ -76,4 +76,4 @@
                 x="1688.4968"
                 y="300.93787"
                 inkscape:label="rect3"><title
-         id="title1-6-9">{id: &quot;rect3&quot;; action: &quot;moveto&quot;;  description: &quot;img4&quot;;}</title></rect></g></svg>
+         id="title1-6-9">{id: &quot;rect3&quot;; action: &quot;moveto&quot;; destination: &quot;img1&quot;}</title></rect></g></svg>
